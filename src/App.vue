@@ -1,19 +1,19 @@
 <template>
   <v-app>
     <v-content>
-      <PokemonCard/>
+      <PokemonList />
     </v-content>
   </v-app>
 </template>
 
 <script>
-import PokemonCard from './components/PokemonCard';
+import PokemonList from './components/PokemonList';
 
 export default {
   name: 'App',
 
   components: {
-    PokemonCard,
+    PokemonList,
   },
 
   data: () => ({

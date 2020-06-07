@@ -30,14 +30,20 @@
 import axios from 'axios'
 
 export default {
-  name: "Pokemon",
+  name: "PokemonCard",
+  props: {
+    id: {
+      type: Number,
+      required: true
+    }
+  },
   data() {
     return {
       info: []
     };
   },
   created() {
-    axios.get("https://pokeapi.co/api/v2/pokemon/charmander")
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${this.id}`)
       .then(response => {
         this.info = response.data;
       })
