@@ -1,6 +1,6 @@
 <template>
   <div id="pokemon">
-    <v-card class="mx-auto mt-5" max-width="599" raised>
+    <v-card class="mx-auto mt-5" max-width="450" raised>
       <div class="d-block-flex">
         <v-list-item-avatar class="d-inline-flex" tile size="150" color="grey lighten-2">
           <v-img :src="info.sprites.front_default" />
