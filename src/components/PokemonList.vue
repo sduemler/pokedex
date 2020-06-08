@@ -1,9 +1,9 @@
 <template>
-  <ul>
-    <li v-for="n in 9" v-bind:key="n">
+  <div id="list">
+    <div v-for="n in 9" v-bind:key="n">
       <PokemonCard :id="n" />
-    </li>
-  </ul>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -17,5 +17,7 @@ export default {
 };
 </script>
 <style>
-    ul{list-style:none};
+ul {
+  list-style: none;
+}
 </style>
